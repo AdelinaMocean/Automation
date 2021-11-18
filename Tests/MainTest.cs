@@ -19,7 +19,7 @@ namespace Yahoo
             
             driver = new ChromeDriver();
             LoginPage loginPage = new LoginPage();
-            loginPage.DoLogin("mocean_adelina@yahoo.com", "Xklm12@tazz");
+            loginPage.DoLogin("", "");
         }
 
 
