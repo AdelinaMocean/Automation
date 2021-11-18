@@ -34,5 +34,11 @@ namespace Yahoo
 
      
         }
+
+        [TearDown]
+        public void TearDown()
+        {
+            driver.Quit();
+        }
     }
 }
