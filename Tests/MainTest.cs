@@ -19,7 +19,7 @@ namespace Yahoo
             
             driver = new ChromeDriver();
             LoginPage loginPage = new LoginPage();
-            loginPage.DoLogin("", "");
+            loginPage.DoLogin("Enter email here", "Enter password here");
         }
 
 
