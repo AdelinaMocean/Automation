@@ -17,7 +17,7 @@ namespace Yahoo.Pages
         IWebElement passWordButton => webDriverWait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.Id("login-passwd")));
         public void DoLogin(string userName, string passWord)
         {
-            webDriverWait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
+            webDriverWait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
             driver.Manage().Window.Maximize();
             driver.Url = "https://login.yahoo.com/";
 
