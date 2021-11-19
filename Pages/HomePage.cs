@@ -7,7 +7,7 @@ namespace Yahoo.Pages
 
     {
 
-        IWebElement goToEmailsPage => driver.FindElement(By.Id("ybarMailLink"));
+        IWebElement goToEmailsPage => webDriverWait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.Id("ybarMailLink")));
         public void HomeElements()
         {
             goToEmailsPage.Click();
